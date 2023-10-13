@@ -1,0 +1,27 @@
+[*]
+[*] GTKWave Analyzer v3.3.114 (w)1999-2023 BSI
+[*] Tue Oct 10 08:38:03 2023
+[*]
+[dumpfile] "/home/ammar-bin-amir/Desktop/Communication Protocols/UART/UART_Baud_Rate_tb.vcd"
+[dumpfile_mtime] "Tue Oct 10 08:25:26 2023"
+[dumpfile_size] 638488
+[savefile] "/home/ammar-bin-amir/Desktop/Communication Protocols/UART/UART_Baud_Rate.gtkw"
+[timestart] 0
+[size] 1850 1006
+[pos] -27 -24
+*-12.000000 2990 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] uart_baud_rate_tb.
+[sst_width] 278
+[signals_width] 252
+[sst_expanded] 1
+[sst_vpaned_height] 285
+@28
+uart_baud_rate_tb.clk
+uart_baud_rate_tb.rst
+@22
+uart_baud_rate_tb.baud_division[31:0]
+uart_baud_rate_tb.uut.baud_count[31:0]
+@28
+uart_baud_rate_tb.baud_tick
+[pattern_trace] 1
+[pattern_trace] 0
