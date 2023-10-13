@@ -9,7 +9,8 @@ module round_robin_arbiter (
 
     always @(posedge clk) begin
         if (rst) begin
-            count = 0;
+            grants <= 0;
+            count <= 0;
         end
         else begin
             if (count == 2) begin
