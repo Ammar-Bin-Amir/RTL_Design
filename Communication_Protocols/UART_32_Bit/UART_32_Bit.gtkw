@@ -1,0 +1,50 @@
+[*]
+[*] GTKWave Analyzer v3.3.114 (w)1999-2023 BSI
+[*] Tue Oct 10 10:14:57 2023
+[*]
+[dumpfile] "/home/ammar-bin-amir/Desktop/Communication Protocols/UART_32_Bit/UART_32_Bit_Test.vcd"
+[dumpfile_mtime] "Mon Oct  9 17:28:40 2023"
+[dumpfile_size] 75339091
+[savefile] "/home/ammar-bin-amir/Desktop/Communication Protocols/UART_32_Bit/UART_32_Bit.gtkw"
+[timestart] 0
+[size] 1850 1006
+[pos] -1 -1
+*-20.000000 4812000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] uart_32_bit_test.
+[treeopen] uart_32_bit_test.uut.
+[sst_width] 278
+[signals_width] 259
+[sst_expanded] 1
+[sst_vpaned_height] 285
+@28
+uart_32_bit_test.clk
+uart_32_bit_test.rst
+uart_32_bit_test.address[1:0]
+@22
+uart_32_bit_test.uut.uut_uart_32_bit_baud_rate.baud_division[31:0]
+uart_32_bit_test.uut.uut_uart_32_bit_baud_rate.baud_count[31:0]
+@28
+uart_32_bit_test.uut.uut_uart_32_bit_baud_rate.baud_tick
+uart_32_bit_test.write_enable
+uart_32_bit_test.uut.uut_uart_32_bit_tx.en
+@22
+uart_32_bit_test.write_data[31:0]
+@28
+uart_32_bit_test.tx
+@22
+uart_32_bit_test.uut.uut_uart_32_bit_tx.count_16[3:0]
+uart_32_bit_test.uut.uut_uart_32_bit_tx.current_state[5:0]
+uart_32_bit_test.uut.uut_uart_32_bit_tx.next_state[5:0]
+@28
+uart_32_bit_test.rx
+@22
+uart_32_bit_test.uut.uut_uart_32_bit_rx.count_16[3:0]
+uart_32_bit_test.uut.uut_uart_32_bit_rx.current_state[5:0]
+uart_32_bit_test.uut.uut_uart_32_bit_rx.next_state[5:0]
+uart_32_bit_test.uut.uut_uart_32_bit_rx.data[31:0]
+@28
+uart_32_bit_test.read_enable
+@23
+uart_32_bit_test.read_data[31:0]
+[pattern_trace] 1
+[pattern_trace] 0

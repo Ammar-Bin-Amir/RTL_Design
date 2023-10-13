@@ -1,0 +1,32 @@
+[*]
+[*] GTKWave Analyzer v3.3.114 (w)1999-2023 BSI
+[*] Tue Oct 10 10:15:37 2023
+[*]
+[dumpfile] "/home/ammar-bin-amir/Desktop/Communication Protocols/UART_32_Bit/UART_32_Bit_Tx_tb.vcd"
+[dumpfile_mtime] "Tue Oct 10 08:50:09 2023"
+[dumpfile_size] 57826338
+[savefile] "/home/ammar-bin-amir/Desktop/Communication Protocols/UART_32_Bit/UART_32_Bit_Tx.gtkw"
+[timestart] 0
+[size] 1850 1006
+[pos] -1 -1
+*-19.000000 2839000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] uart_32_bit_tx_tb.
+[sst_width] 278
+[signals_width] 248
+[sst_expanded] 1
+[sst_vpaned_height] 285
+@28
+uart_32_bit_tx_tb.clk
+uart_32_bit_tx_tb.rst
+@22
+uart_32_bit_tx_tb.data[31:0]
+@28
+uart_32_bit_tx_tb.baud_tick
+uart_32_bit_tx_tb.en
+uart_32_bit_tx_tb.tx
+@22
+uart_32_bit_tx_tb.uut.count_16[3:0]
+uart_32_bit_tx_tb.uut.current_state[5:0]
+uart_32_bit_tx_tb.uut.next_state[5:0]
+[pattern_trace] 1
+[pattern_trace] 0

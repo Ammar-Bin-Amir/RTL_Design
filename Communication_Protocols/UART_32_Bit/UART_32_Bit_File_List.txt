@@ -1,0 +1,3 @@
+UART_32_Bit_Baud_Rate.v
+UART_32_Bit_Tx.v
+UART_32_Bit_Rx.v
