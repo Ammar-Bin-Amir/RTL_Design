@@ -1,0 +1,43 @@
+[*]
+[*] GTKWave Analyzer v3.3.114 (w)1999-2023 BSI
+[*] Wed Oct 11 10:54:42 2023
+[*]
+[dumpfile] "/home/ammar-bin-amir/Desktop/Communication Protocols/AXI4_Lite_UART_32_Bit_Slave/AXI4_Lite_UART_32_Bit_Slave_Test.vcd"
+[dumpfile_mtime] "Wed Oct 11 10:26:44 2023"
+[dumpfile_size] 268058396
+[savefile] "/home/ammar-bin-amir/Desktop/Communication Protocols/AXI4_Lite_UART_32_Bit_Slave/AXI4_Lite_UART_32_Bit_Slave.gtkw"
+[timestart] 0
+[size] 1850 1006
+[pos] -1 -1
+*-7.886905 145 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] axi4_lite_uart_32_bit_slave_tb.
+[treeopen] axi4_lite_uart_32_bit_slave_tb.uut.
+[treeopen] axi4_lite_uart_32_bit_slave_tb.uut.uut_slave.
+[sst_width] 278
+[signals_width] 274
+[sst_expanded] 1
+[sst_vpaned_height] 311
+@28
+axi4_lite_uart_32_bit_slave_tb.aclk
+axi4_lite_uart_32_bit_slave_tb.aresetn
+axi4_lite_uart_32_bit_slave_tb.uut.uut_slave.address[1:0]
+@22
+axi4_lite_uart_32_bit_slave_tb.uut.uut_slave.baud_division[31:0]
+@28
+axi4_lite_uart_32_bit_slave_tb.uut.uut_slave.baud_tick
+@22
+axi4_lite_uart_32_bit_slave_tb.uut.uut_slave.data_out[31:0]
+@28
+axi4_lite_uart_32_bit_slave_tb.uut.uut_slave.write_enable
+@22
+axi4_lite_uart_32_bit_slave_tb.uut.uut_slave.write_data[31:0]
+@28
+axi4_lite_uart_32_bit_slave_tb.uut.uut_slave.enable
+axi4_lite_uart_32_bit_slave_tb.uut.uut_slave.tx
+axi4_lite_uart_32_bit_slave_tb.uut.uut_slave.rx
+axi4_lite_uart_32_bit_slave_tb.uut.uut_slave.read_enable
+@22
+axi4_lite_uart_32_bit_slave_tb.uut.uut_slave.read_data[31:0]
+axi4_lite_uart_32_bit_slave_tb.uut.uut_slave.data_in[31:0]
+[pattern_trace] 1
+[pattern_trace] 0

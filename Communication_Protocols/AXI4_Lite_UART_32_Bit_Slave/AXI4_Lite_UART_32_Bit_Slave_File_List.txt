@@ -1,0 +1,7 @@
+AXI4_Lite_UART_32_Bit_Slave.v
+../AXI4_Lite/AXI4_Lite_Master_Adaptor.v
+../AXI4_Lite/AXI4_Lite_Slave_Adaptor.v
+../UART_32_Bit/UART_32_Bit.v
+../UART_32_Bit/UART_32_Bit_Baud_Rate.v
+../UART_32_Bit/UART_32_Bit_Tx.v
+../UART_32_Bit/UART_32_Bit_Rx.v
