@@ -1,0 +1,62 @@
+[*]
+[*] GTKWave Analyzer v3.3.114 (w)1999-2023 BSI
+[*] Fri Oct  6 14:07:39 2023
+[*]
+[dumpfile] "/home/ammar-bin-amir/Desktop/Communication Protocols/AXI4_Lite/AXI4_Lite_Slave_tb.vcd"
+[dumpfile_mtime] "Fri Oct  6 14:03:51 2023"
+[dumpfile_size] 4680
+[savefile] "/home/ammar-bin-amir/Desktop/Communication Protocols/AXI4_Lite/AXI4_Lite_Slave_Adopter.gtkw"
+[timestart] 0
+[size] 1850 1006
+[pos] -1 -1
+*-6.000000 235 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] axi4_lite_slave_tb.
+[sst_width] 278
+[signals_width] 268
+[sst_expanded] 1
+[sst_vpaned_height] 285
+@28
+axi4_lite_slave_tb.aclk
+axi4_lite_slave_tb.aresetn
+@22
+axi4_lite_slave_tb.awaddr_in[31:0]
+@28
+axi4_lite_slave_tb.awprot_in[2:0]
+axi4_lite_slave_tb.awvalid_in
+axi4_lite_slave_tb.awready_in
+axi4_lite_slave_tb.awready_out
+@22
+axi4_lite_slave_tb.uut.awaddr_save[31:0]
+axi4_lite_slave_tb.wdata_in[31:0]
+axi4_lite_slave_tb.wstrb_in[3:0]
+@28
+axi4_lite_slave_tb.wvalid_in
+axi4_lite_slave_tb.wready_in
+axi4_lite_slave_tb.wready_out
+@22
+axi4_lite_slave_tb.uut.wdata_save[31:0]
+@28
+axi4_lite_slave_tb.uut.wdata_save_indication
+axi4_lite_slave_tb.bresp_out[1:0]
+axi4_lite_slave_tb.bvalid_out
+axi4_lite_slave_tb.bready_in
+@22
+axi4_lite_slave_tb.araddr_in[31:0]
+@28
+axi4_lite_slave_tb.arprot_in[2:0]
+axi4_lite_slave_tb.arvalid_in
+axi4_lite_slave_tb.arready_in
+axi4_lite_slave_tb.arready_out
+@22
+axi4_lite_slave_tb.uut.araddr_save[31:0]
+@28
+axi4_lite_slave_tb.uut.rdata_save_indication
+@22
+axi4_lite_slave_tb.rdata_in[31:0]
+axi4_lite_slave_tb.rdata_out[31:0]
+@28
+axi4_lite_slave_tb.rvalid_out
+axi4_lite_slave_tb.rready_in
+axi4_lite_slave_tb.rresp_out[1:0]
+[pattern_trace] 1
+[pattern_trace] 0
