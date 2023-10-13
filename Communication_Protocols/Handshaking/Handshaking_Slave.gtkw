@@ -1,0 +1,30 @@
+[*]
+[*] GTKWave Analyzer v3.3.114 (w)1999-2023 BSI
+[*] Tue Oct 10 08:21:12 2023
+[*]
+[dumpfile] "/home/ammar-bin-amir/Desktop/Communication Protocols/Handshaking/Handshaking_Slave_tb.vcd"
+[dumpfile_mtime] "Tue Oct 10 08:17:30 2023"
+[dumpfile_size] 3198
+[savefile] "/home/ammar-bin-amir/Desktop/Communication Protocols/Handshaking/Handshaking_Slave.gtkw"
+[timestart] 0
+[size] 1850 1006
+[pos] -1 -1
+*-7.000000 215 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] handshaking_slave_tb.
+[sst_width] 278
+[signals_width] 154
+[sst_expanded] 1
+[sst_vpaned_height] 285
+@28
+handshaking_slave_tb.clk
+handshaking_slave_tb.rst
+@22
+handshaking_slave_tb.data_in[7:0]
+@28
+handshaking_slave_tb.data_valid
+handshaking_slave_tb.ready
+handshaking_slave_tb.data_ready
+@22
+handshaking_slave_tb.uut.data[7:0]
+[pattern_trace] 1
+[pattern_trace] 0
