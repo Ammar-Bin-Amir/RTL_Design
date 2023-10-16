@@ -13,12 +13,18 @@ module uart_baud_rate (
             baud_tick <= 0;
         end
         else begin
-            if (baud_count == baud_division) begin
-                baud_count <= 0;
-                baud_tick <= 1;
+            if (baud_division != 0) begin
+                if (baud_count == baud_division) begin
+                    baud_count <= 0;
+                    baud_tick <= 1;
+                end
+                else begin
+                    baud_count <= baud_count + 1;
+                    baud_tick <= 0;
+                end
             end
             else begin
-                baud_count <= baud_count + 1;
+                baud_count <= 0;
                 baud_tick <= 0;
             end
         end
