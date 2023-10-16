@@ -1,7 +1,7 @@
 `timescale 1ns/1ns
-`include "AXI4_Lite_Master.v"
+`include "AXI4_Lite_Master_Adaptor.v"
 
-module axi4_lite_master_tb;
+module axi4_lite_master_adaptor_tb;
     
     reg aclk;
     reg aresetn;
@@ -39,7 +39,7 @@ module axi4_lite_master_tb;
     reg rvalid_in;
     wire rready_out;
 
-    axi4_lite_master uut(
+    axi4_lite_master_adaptor uut(
         aclk,aresetn,
         // Write Address Channel
         awaddr_out,awprot_out,awvalid_out,awready_in,awaddr_in,awprot_in,
@@ -54,8 +54,8 @@ module axi4_lite_master_tb;
     );
 
     initial begin
-        $dumpfile("AXI4_Lite_Master_tb.vcd");
-        $dumpvars(0,axi4_lite_master_tb);
+        $dumpfile("AXI4_Lite_Master_Adaptor_tb.vcd");
+        $dumpvars(0,axi4_lite_master_adaptor_tb);
     end
 
     initial aclk = 0;
@@ -71,10 +71,8 @@ module axi4_lite_master_tb;
         rdata_in = 32'b1111_0000_1011_0100_1010_0101_1001_0110;
         #7 aresetn = 0;
         #8 aresetn = 1;
-        #50 bresp_in = 0; bvalid_in = 1; rresp_in = 0; rvalid_in = 1;
-        #100 awready_in = 1; wready_in = 1; arready_in = 1;
-        #50 awready_in = 0; wready_in = 0; arready_in = 0;
-        #50 bvalid_in = 0; rvalid_in = 0;
+        #100 awready_in = 1; wready_in = 1; bresp_in = 0; bvalid_in = 1;
+        #100 arready_in = 1; rresp_in = 0; rvalid_in = 1;
         #1000 $finish;
     end
 
