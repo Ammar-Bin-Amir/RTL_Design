@@ -1,5 +1,5 @@
-`include "AXI4_Lite_Master.v"
-`include "AXI4_Lite_Slave.v"
+`include "AXI4_Lite_Master_Adaptor.v"
+`include "AXI4_Lite_Slave_Adaptor.v"
 
 module axi4_lite_top_design (
     input aclk,
@@ -10,16 +10,14 @@ module axi4_lite_top_design (
     input [2:0] awprot_in,
     output [2:0] awprot_out,
     output awvalid,
-    input awready_in,
-    output awready_out,
+    input awready,
     // Write Data Channel
     input [31:0] wdata_in,
     output [31:0] wdata_out,
     input [3:0] wstrb_in,
     output [3:0] wstrb_out,
     output wvalid,
-    input wready_in,
-    output wready_out,
+    input wready,
     // Write Response Channel
     output [1:0] bresp,
     output bvalid,
@@ -30,8 +28,7 @@ module axi4_lite_top_design (
     input [2:0] arprot_in,
     output [2:0] arprot_out,
     output arvalid,
-    input arready_in,
-    output arready_out,
+    input arready,
     // Read Data Channel
     input [31:0] rdata_in,
     output [31:0] rdata_out,
@@ -40,21 +37,21 @@ module axi4_lite_top_design (
     output rready
 );
     
-    axi4_lite_master uut_master(
+    axi4_lite_master_adaptor uut_master(
         .aclk (aclk),
         .aresetn (aresetn),
         // Write Address Channel
         .awaddr_out (awaddr_out),
         .awprot_out (awprot_out),
         .awvalid_out (awvalid),
-        .awready_in (awready_out),
+        .awready_in (awready),
         .awaddr_in (awaddr_in),
         .awprot_in (awprot_in),
         // Write Data Channel
         .wdata_out (wdata_out),
         .wstrb_out (wstrb_out),
         .wvalid_out (wvalid),
-        .wready_in (wready_out),
+        .wready_in (wready),
         .wdata_in (wdata_in),
         .wstrb_in (wstrb_in),
         // Write Response Channel
@@ -65,7 +62,7 @@ module axi4_lite_top_design (
         .araddr_out (araddr_out),
         .arprot_out (arprot_out),
         .arvalid_out (arvalid),
-        .arready_in (arready_out),
+        .arready_in (arready),
         .araddr_in (araddr_in),
         .arprot_in (arprot_in),
         // Read Data Channel
@@ -75,21 +72,19 @@ module axi4_lite_top_design (
         .rready_out (rready)
     );
 
-    axi4_lite_slave uut_slave(
+    axi4_lite_slave_adaptor uut_slave(
         .aclk (aclk),
         .aresetn (aresetn),
         // Write Address Channel
         .awaddr_in (awaddr_out),
         .awprot_in (awprot_out),
         .awvalid_in (awvalid),
-        .awready_out (awready_out),
-        .awready_in (awready_in),
+        .awready_out (awready),
         // Write Data Channel
         .wdata_in (wdata_out),
         .wstrb_in (wstrb_out),
         .wvalid_in (wvalid),
-        .wready_out (wready_out),
-        .wready_in (wready_in),
+        .wready_out (wready),
         // Write Response Channel
         .bresp_out (bresp),
         .bvalid_out (bvalid),
@@ -98,8 +93,7 @@ module axi4_lite_top_design (
         .araddr_in (araddr_out),
         .arprot_in (arprot_out),
         .arvalid_in (arvalid),
-        .arready_out (arready_out),
-        .arready_in (arready_in),
+        .arready_out (arready),
         // Read Data Channel
         .rdata_out (rdata_out),
         .rresp_out (rresp),
