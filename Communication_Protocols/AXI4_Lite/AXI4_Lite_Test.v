@@ -11,16 +11,14 @@ module axi4_lite_tb;
     reg [2:0] awprot_in;
     wire [2:0] awprot_out;
     wire awvalid;
-    reg awready_in;
-    wire awready_out;
+    reg awready;
     // Write Data Channel
     reg [31:0] wdata_in;
     wire [31:0] wdata_out;
     reg [3:0] wstrb_in;
     wire [3:0] wstrb_out;
     wire wvalid;
-    reg wready_in;
-    wire wready_out;
+    reg wready;
     // Write Response Channel
     wire [1:0] bresp;
     wire bvalid;
@@ -31,8 +29,7 @@ module axi4_lite_tb;
     reg [2:0] arprot_in;
     wire [2:0] arprot_out;
     wire arvalid;
-    reg arready_in;
-    wire arready_out;
+    reg arready;
     // Read Data Channel
     reg [31:0] rdata_in;
     wire [31:0] rdata_out;
@@ -43,13 +40,13 @@ module axi4_lite_tb;
     axi4_lite_top_design uut(
         aclk,aresetn,
         // Write Address Channel
-        awaddr_in,awaddr_out,awprot_in,awprot_out,awvalid,awready_in,awready_out,
+        awaddr_in,awaddr_out,awprot_in,awprot_out,awvalid,awready,
         // Write Data Channel
-        wdata_in,wdata_out,wstrb_in,wstrb_out,wvalid,wready_in,wready_out,
+        wdata_in,wdata_out,wstrb_in,wstrb_out,wvalid,wready,
         // Write Response Channel
         bresp,bvalid,bready,
         // Read Address Channel
-        araddr_in,araddr_out,arprot_in,arprot_out,arvalid,arready_in,arready_out,
+        araddr_in,araddr_out,arprot_in,arprot_out,arvalid,arready,
         // Read Data Channel
         rdata_in,rdata_out,rresp,rvalid,rready
     );
@@ -73,13 +70,6 @@ module axi4_lite_tb;
         aresetn = 1;
         #22 aresetn = 0;
         #48 aresetn = 1;
-        #40 awready_in = 1;
-        #40 wready_in = 1;
-        #40 arready_in = 1;
-        #50 awready_in = 0; wready_in = 0; arready_in = 0;
-        #30 awready_in = 1;
-        #10 wready_in = 1;
-        #10 arready_in = 1;
         #1000 $finish;
     end
 
