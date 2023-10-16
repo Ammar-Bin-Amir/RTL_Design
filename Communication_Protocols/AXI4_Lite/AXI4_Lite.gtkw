@@ -1,19 +1,19 @@
 [*]
 [*] GTKWave Analyzer v3.3.114 (w)1999-2023 BSI
-[*] Fri Oct  6 14:07:15 2023
+[*] Mon Oct 16 15:04:25 2023
 [*]
-[dumpfile] "/home/ammar-bin-amir/Desktop/Communication Protocols/AXI4_Lite/AXI4_Lite_Test.vcd"
-[dumpfile_mtime] "Fri Oct  6 14:04:45 2023"
-[dumpfile_size] 8675
-[savefile] "/home/ammar-bin-amir/Desktop/Communication Protocols/AXI4_Lite/AXI4_Lite.gtkw"
+[dumpfile] "/home/ammar-bin-amir/Desktop/RTL_Design/Communication_Protocols/AXI4_Lite/AXI4_Lite_Test.vcd"
+[dumpfile_mtime] "Mon Oct 16 15:03:46 2023"
+[dumpfile_size] 6881
+[savefile] "/home/ammar-bin-amir/Desktop/RTL_Design/Communication_Protocols/AXI4_Lite/AXI4_Lite.gtkw"
 [timestart] 0
 [size] 1850 1006
 [pos] -1 -1
-*-6.000000 327 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-5.000000 49 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] axi4_lite_tb.
 [treeopen] axi4_lite_tb.uut.
 [sst_width] 278
-[signals_width] 263
+[signals_width] 269
 [sst_expanded] 1
 [sst_vpaned_height] 285
 @28
@@ -21,24 +21,23 @@ axi4_lite_tb.aclk
 axi4_lite_tb.aresetn
 @22
 axi4_lite_tb.awaddr_in[31:0]
+@28
+axi4_lite_tb.awprot_out[2:0]
+@22
 axi4_lite_tb.awaddr_out[31:0]
 @28
 axi4_lite_tb.awprot_in[2:0]
-axi4_lite_tb.awprot_out[2:0]
 axi4_lite_tb.awvalid
-axi4_lite_tb.awready_in
-axi4_lite_tb.awready_out
-@23
-axi4_lite_tb.uut.uut_slave.awaddr_save[31:0]
+axi4_lite_tb.awready
 @22
+axi4_lite_tb.uut.uut_slave.awaddr_save[31:0]
 axi4_lite_tb.wdata_in[31:0]
-axi4_lite_tb.wdata_out[31:0]
 axi4_lite_tb.wstrb_in[3:0]
+axi4_lite_tb.wdata_out[31:0]
 axi4_lite_tb.wstrb_out[3:0]
 @28
 axi4_lite_tb.wvalid
-axi4_lite_tb.wready_in
-axi4_lite_tb.wready_out
+axi4_lite_tb.wready
 @22
 axi4_lite_tb.uut.uut_slave.wdata_save[31:0]
 @28
@@ -49,24 +48,27 @@ axi4_lite_tb.bready
 axi4_lite_tb.uut.uut_master.bresp_save[1:0]
 @22
 axi4_lite_tb.araddr_in[31:0]
-axi4_lite_tb.araddr_out[31:0]
 @28
 axi4_lite_tb.arprot_in[2:0]
+@22
+axi4_lite_tb.araddr_out[31:0]
+@28
 axi4_lite_tb.arprot_out[2:0]
+axi4_lite_tb.arready
 axi4_lite_tb.arvalid
-axi4_lite_tb.arready_in
-axi4_lite_tb.arready_out
 @22
 axi4_lite_tb.uut.uut_slave.araddr_save[31:0]
+@28
+axi4_lite_tb.uut.uut_slave.rdata_save_indication
+@22
 axi4_lite_tb.rdata_in[31:0]
 axi4_lite_tb.rdata_out[31:0]
 @28
 axi4_lite_tb.rvalid
 axi4_lite_tb.rready
-@22
+@23
 axi4_lite_tb.uut.uut_master.rdata_save[31:0]
 @28
 axi4_lite_tb.rresp[1:0]
-axi4_lite_tb.uut.uut_master.rresp_save[1:0]
 [pattern_trace] 1
 [pattern_trace] 0
