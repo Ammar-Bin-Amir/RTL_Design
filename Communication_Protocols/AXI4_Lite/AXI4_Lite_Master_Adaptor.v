@@ -1,4 +1,4 @@
-module axi4_lite_master (
+module axi4_lite_master_adaptor (
     input aclk,
     input aresetn,
     // Write Address Channel
@@ -45,7 +45,7 @@ module axi4_lite_master (
         else begin
             awaddr_out <= awaddr_in;
             awprot_out <= awprot_in;
-            if (awaddr_out != 0) begin
+            if (awaddr_out) begin
                 awvalid_out <= 1;
                 if (awready_in) begin
                     awvalid_out <= 0;
@@ -63,7 +63,7 @@ module axi4_lite_master (
         else begin
             wdata_out <= wdata_in;
             wstrb_out <= wstrb_in;
-            if (wdata_out != 0) begin
+            if (wdata_out) begin
                 wvalid_out <= 1;
                 if (wready_in) begin
                     wvalid_out <= 0;
@@ -103,7 +103,7 @@ module axi4_lite_master (
         else begin
             araddr_out <= araddr_in;
             arprot_out <= arprot_in;
-            if (araddr_out != 0) begin
+            if (araddr_out) begin
                 arvalid_out <= 1;
                 if (arready_in) begin
                     arvalid_out <= 0;
@@ -123,7 +123,6 @@ module axi4_lite_master (
             rdata_save <= 0;
         end
         else begin
-            // rready_out <= rready_in;
             if (arvalid_out && arready_in) begin
                 rready_out <= 1;
                 if (rvalid_in) begin
