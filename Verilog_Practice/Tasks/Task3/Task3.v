@@ -39,11 +39,16 @@ module task3 (
             count_red <= 0;
         end
         else begin
-            if (count_red == 30) begin
-                count_red <= 0;
+            if (next_state == RED) begin
+                if (count_red == 30) begin
+                    count_red <= 0;
+                end
+                else begin
+                    count_red <= count_red + 1;
+                end
             end
             else begin
-                count_red <= count_red + 1;
+                count_red <= 0;
             end
         end
     end
