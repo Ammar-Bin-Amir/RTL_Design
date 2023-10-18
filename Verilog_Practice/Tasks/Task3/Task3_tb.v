@@ -1,4 +1,4 @@
-`timescale 1ns/1ns
+`timescale 1ms/1ms
 `include "Task3.v"
 
 module task3_tb;
@@ -16,12 +16,12 @@ module task3_tb;
     end
 
     initial clk = 0;
-    always #5 clk = ~clk;
+    always #500 clk = ~clk;
 
     initial begin
-        #10 rst = 1;
-        #50 rst = 0;
-        #5000 $finish;
+        #1000 rst = 1;
+        #8000 rst = 0;
+        #5000000 $finish;
     end
 
 endmodule
