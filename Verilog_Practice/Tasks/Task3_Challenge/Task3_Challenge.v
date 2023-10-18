@@ -1,13 +1,11 @@
 /*
 
-CHALLENGE: Perform Task3 using Single Counter
-=============================================
-
 Design a One-Way Traffic Control System:
 > On RESET every light would be LOW
-> RED lights remains HIGH for 30s after that YELLOW light would be HIGH
-> YELLOW lights remain HIGH for 3s after that GREEN light would be HIGH
-> GREEN lights remain HIGH for 30s after that RED light would be HIGH
+> RED light will remain HIGH for 30s after that YELLOW light would be HIGH
+> YELLOW light will remain HIGH for 3s along with RED light after that GREEN light would be HIGH
+> GREEN light will remain HIGH for 30s after that YELLOW light would be HIGH
+> YELLOW light will remain HIGH for 3s after that RED light would be HIGH
 
 */
 
@@ -19,16 +17,17 @@ module task3_challenge (
     output reg green
 );
     
-    localparam IDLE = 2'b00;
-    localparam RED = 2'b01;
-    localparam YELLOW = 2'b10;
-    localparam GREEN = 2'b11;
+    localparam DISABLE = 3'b000;
+    localparam STOP = 3'b001;
+    localparam READY_TO_GO = 3'b010;
+    localparam GO = 3'b011;
+    localparam READY_TO_STOP = 3'b100;
 
-    reg [1:0] current_state, next_state;
+    reg [2:0] current_state, next_state;
     
     always @(posedge clk) begin
         if (rst) begin
-            current_state <= IDLE;
+            current_state <= DISABLE;
         end
         else begin
             current_state <= next_state;
@@ -37,31 +36,37 @@ module task3_challenge (
 
     always @(*) begin
         case (current_state)
-            IDLE: begin
+            DISABLE: begin
                 red = 0;
                 yellow = 0;
                 green = 0;
-                next_state <= RED;
+                next_state <= STOP;
             end
-            RED: begin
+            STOP: begin
                 red = 1;
                 yellow = 0;
                 green = 0;
-                next_state = YELLOW;
+                next_state = READY_TO_GO;
             end
-            YELLOW: begin
+            READY_TO_GO: begin
                 red = 1;
                 yellow = 1;
                 green = 0;
-                next_state = GREEN;
+                next_state = GO;
             end
-            GREEN: begin
+            GO: begin
                 red = 0;
                 yellow = 0;
                 green = 1;
-                next_state = RED;
+                next_state = READY_TO_STOP;
             end
-            default: next_state <= IDLE;
+            READY_TO_STOP: begin
+                red = 0;
+                yellow = 1;
+                green = 0;
+                next_state = STOP;
+            end
+            default: next_state <= DISABLE;
         endcase
     end
 
