@@ -1,4 +1,4 @@
-`timescale 1ns/1ns
+`timescale 1ms/1ms
 `include "Task3_Challenge.v"
 
 module task3_challenge_tb;
@@ -16,12 +16,12 @@ module task3_challenge_tb;
     end
 
     initial clk = 0;
-    always #5 clk = ~clk;
+    always #500 clk = ~clk;
 
     initial begin
-        #10 rst = 1;
-        #50 rst = 0;
-        #5000 $finish;
+        #1000 rst = 1;
+        #9000 rst = 0;
+        #50000 $finish;
     end
 
 endmodule
