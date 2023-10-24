@@ -2,22 +2,27 @@ module handshaking_slave (
     input clk,
     input rst,
     input [7:0] data_in,
-    input data_valid,
-    input ready,
-    output reg data_ready
+    input valid_in,
+    output reg ready_out
 );
     
-    reg [7:0] data;
+    reg [7:0] data_save;
 
     always @(posedge clk) begin
         if (rst) begin
-            data_ready <= 0;
-            data <= 0;
+            ready_out <= 0;
+            data_save <= 0;
         end
         else begin
-            data_ready <= ready;
-            if (data_ready && data_valid) begin
-                data <= data_in;
+            // ready_out <= 1;
+            if (valid_in) begin
+                ready_out <= 1;
+                if (ready_out) begin
+                   data_save <= data_in;
+                end
+            end
+            else if (valid_in == 0) begin
+                ready_out <= 0;
             end
         end
     end

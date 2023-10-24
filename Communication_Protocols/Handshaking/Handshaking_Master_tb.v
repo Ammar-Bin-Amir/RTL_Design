@@ -6,10 +6,10 @@ module handshaking_master_tb;
     reg clk,rst;
     reg [7:0] data_in;
     wire [7:0] data_out;
-    wire data_valid;
-    reg data_ready;
+    wire valid_out;
+    reg ready_in;
 
-    handshaking_master uut(clk,rst,data_in,data_out,data_valid,data_ready);
+    handshaking_master uut(clk,rst,data_in,data_out,valid_out,ready_in);
 
     initial begin
         $dumpfile("Handshaking_Master_tb.vcd");
@@ -24,9 +24,15 @@ module handshaking_master_tb;
         #10 rst = 0;
         #10 rst = 1;
         #10 rst = 0;
-        #50 data_ready = 1;
-        #75 data_ready = 0;
-        #95 data_in = 8'b0110_1001;
+        #50 ready_in = 1;
+        #50 ready_in = 0;
+        #50 data_in = 8'b0110_1001;
+        #50 ready_in = 1;
+        #50 ready_in = 0;
+        #50 data_in = 8'b0000_0000;
+        #50 ready_in = 1;
+        #50 ready_in = 0;
+        #50 data_in = 8'b1111_1111;
         #1000 $finish;
     end
 
