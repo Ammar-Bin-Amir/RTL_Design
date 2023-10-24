@@ -1,0 +1,43 @@
+[*]
+[*] GTKWave Analyzer v3.3.114 (w)1999-2023 BSI
+[*] Tue Oct 24 09:04:24 2023
+[*]
+[dumpfile] "(null)"
+[savefile] "/home/ammar-bin-amir/Desktop/RTL_Design/Communication_Protocols/Handshaking/Handshaking_Crossbar_2x2.gtkw"
+[timestart] 0
+[size] 1850 1006
+[pos] -1 -1
+*-8.868373 1725 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] handshaking_xbar_2x2_tb.
+[sst_width] 278
+[signals_width] 189
+[sst_expanded] 1
+[sst_vpaned_height] 299
+@28
+handshaking_xbar_2x2_tb.clk
+handshaking_xbar_2x2_tb.rst
+@29
+handshaking_xbar_2x2_tb.uut.current_state
+@22
+handshaking_xbar_2x2_tb.data_out_m1[7:0]
+@28
+handshaking_xbar_2x2_tb.valid_out_m1
+handshaking_xbar_2x2_tb.ready_in_m1
+@22
+handshaking_xbar_2x2_tb.data_out_m2[7:0]
+@28
+handshaking_xbar_2x2_tb.valid_out_m2
+handshaking_xbar_2x2_tb.ready_in_m2
+@22
+handshaking_xbar_2x2_tb.data_in_s1[7:0]
+@28
+handshaking_xbar_2x2_tb.valid_in_s1
+handshaking_xbar_2x2_tb.ready_out_s1
+@22
+handshaking_xbar_2x2_tb.data_in_s2[7:0]
+@28
+handshaking_xbar_2x2_tb.valid_in_s2
+handshaking_xbar_2x2_tb.ready_out_s2
+handshaking_xbar_2x2_tb.uut.next_state
+[pattern_trace] 1
+[pattern_trace] 0
