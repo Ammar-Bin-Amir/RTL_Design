@@ -1,0 +1,75 @@
+[*]
+[*] GTKWave Analyzer v3.3.114 (w)1999-2023 BSI
+[*] Thu Oct 19 08:58:07 2023
+[*]
+[dumpfile] "/home/ammar-bin-amir/Desktop/RTL_Design/Communication_Protocols/AXI4_Lite/AXI4_Lite_Adaptor_Test.vcd"
+[dumpfile_mtime] "Thu Oct 19 08:53:51 2023"
+[dumpfile_size] 6889
+[savefile] "/home/ammar-bin-amir/Desktop/RTL_Design/Communication_Protocols/AXI4_Lite/AXI4_Lite_Adaptor.gtkw"
+[timestart] 19
+[size] 1850 1006
+[pos] -1 -1
+*-5.000000 121 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] axi4_lite_adaptor_tb.
+[treeopen] axi4_lite_adaptor_tb.uut.
+[sst_width] 278
+[signals_width] 272
+[sst_expanded] 1
+[sst_vpaned_height] 299
+@28
+axi4_lite_adaptor_tb.aclk
+axi4_lite_adaptor_tb.aresetn
+@22
+axi4_lite_adaptor_tb.awaddr_in[31:0]
+@28
+axi4_lite_adaptor_tb.awprot_in[2:0]
+@22
+axi4_lite_adaptor_tb.awaddr_out[31:0]
+@28
+axi4_lite_adaptor_tb.awprot_out[2:0]
+axi4_lite_adaptor_tb.awvalid
+axi4_lite_adaptor_tb.awready
+@22
+axi4_lite_adaptor_tb.uut.uut_slave.araddr_save[31:0]
+axi4_lite_adaptor_tb.wdata_in[31:0]
+axi4_lite_adaptor_tb.wstrb_in[3:0]
+axi4_lite_adaptor_tb.wdata_out[31:0]
+axi4_lite_adaptor_tb.wstrb_out[3:0]
+@28
+axi4_lite_adaptor_tb.wvalid
+axi4_lite_adaptor_tb.wready
+@22
+axi4_lite_adaptor_tb.uut.uut_slave.wdata_save[31:0]
+@28
+axi4_lite_adaptor_tb.uut.uut_slave.wdata_save_indication
+axi4_lite_adaptor_tb.bresp[1:0]
+axi4_lite_adaptor_tb.bvalid
+axi4_lite_adaptor_tb.bready
+axi4_lite_adaptor_tb.uut.uut_master.bresp_save[1:0]
+@22
+axi4_lite_adaptor_tb.uut.uut_master.araddr_in[31:0]
+@28
+axi4_lite_adaptor_tb.uut.uut_master.arprot_in[2:0]
+@22
+axi4_lite_adaptor_tb.uut.uut_master.araddr_out[31:0]
+@28
+axi4_lite_adaptor_tb.uut.uut_master.arprot_out[2:0]
+axi4_lite_adaptor_tb.uut.uut_master.arvalid_out
+axi4_lite_adaptor_tb.uut.uut_master.arready_in
+@22
+axi4_lite_adaptor_tb.uut.uut_slave.araddr_save[31:0]
+@28
+axi4_lite_adaptor_tb.uut.uut_slave.rdata_save_indication
+@22
+axi4_lite_adaptor_tb.rdata_in[31:0]
+axi4_lite_adaptor_tb.rdata_out[31:0]
+@28
+axi4_lite_adaptor_tb.rvalid
+axi4_lite_adaptor_tb.rready
+@23
+axi4_lite_adaptor_tb.uut.uut_master.rdata_save[31:0]
+@28
+axi4_lite_adaptor_tb.rresp[1:0]
+axi4_lite_adaptor_tb.uut.uut_master.rresp_save[1:0]
+[pattern_trace] 1
+[pattern_trace] 0

@@ -1,7 +1,7 @@
 `timescale 1ns/1ns
-`include "AXI4_Lite.v"
+`include "AXI4_Lite_Adaptor.v"
 
-module axi4_lite_tb;
+module axi4_lite_adaptor_tb;
     
     reg aclk;
     reg aresetn;
@@ -37,7 +37,7 @@ module axi4_lite_tb;
     wire rvalid;
     wire rready;
 
-    axi4_lite_top_design uut(
+    axi4_lite_adaptor_top_design uut(
         aclk,aresetn,
         // Write Address Channel
         awaddr_in,awaddr_out,awprot_in,awprot_out,awvalid,awready,
@@ -52,8 +52,8 @@ module axi4_lite_tb;
     );
 
     initial begin
-        $dumpfile("AXI4_Lite_Test.vcd");
-        $dumpvars(0,axi4_lite_tb);
+        $dumpfile("AXI4_Lite_Adaptor_Test.vcd");
+        $dumpvars(0,axi4_lite_adaptor_tb);
     end
 
     initial aclk = 0;

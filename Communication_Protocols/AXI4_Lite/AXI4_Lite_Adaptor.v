@@ -1,7 +1,7 @@
 `include "AXI4_Lite_Master_Adaptor.v"
 `include "AXI4_Lite_Slave_Adaptor.v"
 
-module axi4_lite_top_design (
+module axi4_lite_adaptor_top_design (
     input aclk,
     input aresetn,
     // Write Address Channel
