@@ -1,0 +1,216 @@
+[*]
+[*] GTKWave Analyzer v3.3.114 (w)1999-2023 BSI
+[*] Wed Oct 25 15:51:04 2023
+[*]
+[dumpfile] "/home/ammar-bin-amir/Desktop/RTL_Design/Communication_Protocols/AXI4_Lite/AXI4_Lite_Test.vcd"
+[dumpfile_mtime] "Wed Oct 25 15:22:19 2023"
+[dumpfile_size] 24962
+[savefile] "/home/ammar-bin-amir/Desktop/RTL_Design/Communication_Protocols/AXI4_Lite/AXI4_Lite.gtkw"
+[timestart] 0
+[size] 1850 1006
+[pos] -27 -24
+*-7.696121 1000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] axi4_lite_tb.
+[treeopen] axi4_lite_tb.uut.
+[sst_width] 278
+[signals_width] 272
+[sst_expanded] 1
+[sst_vpaned_height] 299
+@28
+axi4_lite_tb.aclk
+axi4_lite_tb.aresetn
+axi4_lite_tb.uut.uut_xbar_2x2.next_state
+axi4_lite_tb.uut.uut_xbar_2x2.current_state
+@22
+axi4_lite_tb.ext_awaddr_in_m1[31:0]
+@28
+axi4_lite_tb.ext_awprot_in_m1[2:0]
+@22
+axi4_lite_tb.uut.awaddr_out_m1[31:0]
+@28
+axi4_lite_tb.uut.awprot_out_m1[2:0]
+axi4_lite_tb.uut.awvalid_out_m1
+axi4_lite_tb.uut.awready_in_m1
+@24
+axi4_lite_tb.ext_wdata_in_m1[31:0]
+@22
+axi4_lite_tb.ext_wstrb_in_m1[3:0]
+@24
+axi4_lite_tb.uut.wdata_out_m1[31:0]
+@22
+axi4_lite_tb.uut.wstrb_out_m1[3:0]
+@28
+axi4_lite_tb.uut.wvalid_out_m1
+axi4_lite_tb.uut.wready_in_m1
+axi4_lite_tb.uut.bresp_in_m1[1:0]
+[color] 2
+axi4_lite_tb.uut.bvalid_in_m1
+axi4_lite_tb.uut.bready_out_m1
+[color] 7
+axi4_lite_tb.uut.uut_m1.bresp_save[1:0]
+@22
+axi4_lite_tb.ext_araddr_in_m1[31:0]
+@28
+axi4_lite_tb.ext_arprot_in_m1[2:0]
+@22
+axi4_lite_tb.uut.araddr_out_m1[31:0]
+@28
+axi4_lite_tb.uut.arprot_out_m1[2:0]
+axi4_lite_tb.uut.arvalid_out_m1
+axi4_lite_tb.uut.arready_in_m1
+@24
+axi4_lite_tb.uut.rdata_in_m1[31:0]
+@28
+[color] 6
+axi4_lite_tb.uut.rvalid_in_m1
+axi4_lite_tb.uut.rready_out_m1
+@24
+[color] 7
+axi4_lite_tb.uut.uut_m1.rdata_save[31:0]
+@28
+axi4_lite_tb.uut.rresp_in_m1[1:0]
+[color] 7
+axi4_lite_tb.uut.uut_m1.rresp_save[1:0]
+@22
+axi4_lite_tb.ext_awaddr_in_m2[31:0]
+@28
+axi4_lite_tb.ext_awprot_in_m2[2:0]
+@22
+axi4_lite_tb.uut.awaddr_out_m2[31:0]
+@28
+axi4_lite_tb.uut.awprot_out_m2[2:0]
+axi4_lite_tb.uut.awvalid_out_m2
+axi4_lite_tb.uut.awready_in_m2
+@24
+axi4_lite_tb.ext_wdata_in_m2[31:0]
+@22
+axi4_lite_tb.ext_wstrb_in_m2[3:0]
+@24
+axi4_lite_tb.uut.wdata_out_m2[31:0]
+@22
+axi4_lite_tb.uut.wstrb_out_m2[3:0]
+@28
+axi4_lite_tb.uut.wvalid_out_m2
+axi4_lite_tb.uut.wready_in_m2
+axi4_lite_tb.uut.bresp_in_m2[1:0]
+axi4_lite_tb.uut.bvalid_in_m2
+axi4_lite_tb.uut.bready_out_m2
+[color] 7
+axi4_lite_tb.uut.uut_m2.bresp_save[1:0]
+@22
+axi4_lite_tb.ext_araddr_in_m2[31:0]
+@28
+axi4_lite_tb.ext_arprot_in_m2[2:0]
+@22
+axi4_lite_tb.uut.araddr_out_m2[31:0]
+@28
+axi4_lite_tb.uut.arprot_out_m2[2:0]
+axi4_lite_tb.uut.arvalid_out_m2
+axi4_lite_tb.uut.arready_in_m2
+@24
+axi4_lite_tb.uut.rdata_in_m2[31:0]
+@28
+axi4_lite_tb.uut.rvalid_in_m2
+axi4_lite_tb.uut.rready_out_m2
+@24
+[color] 7
+axi4_lite_tb.uut.uut_m2.rdata_save[31:0]
+@28
+axi4_lite_tb.uut.rresp_in_m2[1:0]
+[color] 6
+axi4_lite_tb.uut.uut_m2.rresp_save[1:0]
+@22
+axi4_lite_tb.uut.awaddr_in_s1[31:0]
+@28
+axi4_lite_tb.uut.awprot_in_s1[2:0]
+axi4_lite_tb.uut.awvalid_in_s1
+axi4_lite_tb.uut.awready_out_s1
+@22
+[color] 7
+axi4_lite_tb.uut.uut_s1.awaddr_save[31:0]
+@24
+axi4_lite_tb.uut.wdata_in_s1[31:0]
+@22
+axi4_lite_tb.uut.wstrb_in_s1[3:0]
+@28
+axi4_lite_tb.uut.wvalid_in_s1
+axi4_lite_tb.uut.wready_out_s1
+@24
+[color] 7
+axi4_lite_tb.uut.uut_s1.wdata_save[31:0]
+@28
+[color] 6
+axi4_lite_tb.uut.uut_s1.wdata_save_indication
+axi4_lite_tb.uut.bresp_out_s1[1:0]
+axi4_lite_tb.uut.bvalid_out_s1
+[color] 3
+axi4_lite_tb.uut.bready_in_s1
+@22
+axi4_lite_tb.uut.araddr_in_s1[31:0]
+@28
+axi4_lite_tb.uut.arprot_in_s1[2:0]
+axi4_lite_tb.uut.arvalid_in_s1
+axi4_lite_tb.uut.arready_out_s1
+@22
+[color] 7
+axi4_lite_tb.uut.uut_s1.araddr_save[31:0]
+@28
+[color] 7
+axi4_lite_tb.uut.uut_s1.rdata_save_indication
+@24
+axi4_lite_tb.ext_rdata_in_s1[31:0]
+axi4_lite_tb.uut.rdata_out_s1[31:0]
+@28
+axi4_lite_tb.uut.rvalid_out_s1
+[color] 5
+axi4_lite_tb.uut.rready_in_s1
+axi4_lite_tb.uut.rresp_out_s1[1:0]
+@22
+axi4_lite_tb.uut.awaddr_in_s2[31:0]
+@28
+axi4_lite_tb.uut.awprot_in_s2[2:0]
+axi4_lite_tb.uut.awvalid_in_s2
+axi4_lite_tb.uut.awready_out_s2
+@22
+[color] 7
+axi4_lite_tb.uut.uut_s2.awaddr_save[31:0]
+@24
+axi4_lite_tb.uut.wdata_in_s2[31:0]
+@22
+axi4_lite_tb.uut.wstrb_in_s2[3:0]
+@28
+axi4_lite_tb.uut.wvalid_in_s2
+axi4_lite_tb.uut.wready_out_s2
+@24
+[color] 7
+axi4_lite_tb.uut.uut_s2.wdata_save[31:0]
+@28
+[color] 7
+axi4_lite_tb.uut.uut_s2.wdata_save_indication
+axi4_lite_tb.uut.bresp_out_s2[1:0]
+axi4_lite_tb.uut.bvalid_out_s2
+[color] 3
+axi4_lite_tb.uut.bready_in_s2
+@22
+axi4_lite_tb.uut.araddr_in_s2[31:0]
+@28
+axi4_lite_tb.uut.arprot_in_s2[2:0]
+axi4_lite_tb.uut.arvalid_in_s2
+axi4_lite_tb.uut.arready_out_s2
+@22
+[color] 7
+axi4_lite_tb.uut.uut_s2.araddr_save[31:0]
+@28
+[color] 7
+axi4_lite_tb.uut.uut_s2.rdata_save_indication
+@24
+axi4_lite_tb.ext_rdata_in_s2[31:0]
+@25
+axi4_lite_tb.uut.rdata_out_s2[31:0]
+@28
+axi4_lite_tb.uut.rvalid_out_s2
+[color] 5
+axi4_lite_tb.uut.rready_in_s2
+axi4_lite_tb.uut.rresp_out_s2[1:0]
+[pattern_trace] 1
+[pattern_trace] 0
