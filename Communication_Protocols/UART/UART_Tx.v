@@ -54,7 +54,7 @@ module uart_tx (
         end
     end
 
-    reg [3:0] count_16 = 0;
+    reg [5:0] count_16 = 0;
 
     always @(*) begin
         case (current_state)
@@ -68,7 +68,7 @@ module uart_tx (
             START: begin
                 if (baud_tick) begin
                     tx = 0;
-                    if (count_16 == 15) begin
+                    if (count_16 == 16) begin
                         count_16 = 0;
                         next_state = DATA_BIT_0;
                     end
@@ -80,7 +80,7 @@ module uart_tx (
             DATA_BIT_0: begin
                 if (baud_tick) begin
                     tx = data[0];
-                    if (count_16 == 15) begin
+                    if (count_16 == 16) begin
                         count_16 = 0;
                         next_state = DATA_BIT_1;
                     end
@@ -92,7 +92,7 @@ module uart_tx (
             DATA_BIT_1: begin
                 if (baud_tick) begin
                     tx = data[1];
-                    if (count_16 == 15) begin
+                    if (count_16 == 16) begin
                         count_16 = 0;
                         next_state = DATA_BIT_2;
                     end
@@ -104,7 +104,7 @@ module uart_tx (
             DATA_BIT_2: begin
                 if (baud_tick) begin
                     tx = data[2];
-                    if (count_16 == 15) begin
+                    if (count_16 == 16) begin
                         count_16 = 0;
                         next_state = DATA_BIT_3;
                     end
@@ -116,7 +116,7 @@ module uart_tx (
             DATA_BIT_3: begin
                 if (baud_tick) begin
                     tx = data[3];
-                    if (count_16 == 15) begin
+                    if (count_16 == 16) begin
                         count_16 = 0;
                         next_state = DATA_BIT_4;
                     end
@@ -128,7 +128,7 @@ module uart_tx (
             DATA_BIT_4: begin
                 if (baud_tick) begin
                     tx = data[4];
-                    if (count_16 == 15) begin
+                    if (count_16 == 16) begin
                         count_16 = 0;
                         next_state = DATA_BIT_5;
                     end
@@ -140,7 +140,7 @@ module uart_tx (
             DATA_BIT_5: begin
                 if (baud_tick) begin
                     tx = data[5];
-                    if (count_16 == 15) begin
+                    if (count_16 == 16) begin
                         count_16 = 0;
                         next_state = DATA_BIT_6;
                     end
@@ -152,7 +152,7 @@ module uart_tx (
             DATA_BIT_6: begin
                 if (baud_tick) begin
                     tx = data[6];
-                    if (count_16 == 15) begin
+                    if (count_16 == 16) begin
                         count_16 = 0;
                         next_state = DATA_BIT_7;
                     end
@@ -164,7 +164,7 @@ module uart_tx (
             DATA_BIT_7: begin
                 if (baud_tick) begin
                     tx = data[7];
-                    if (count_16 == 15) begin
+                    if (count_16 == 16) begin
                         count_16 = 0;
                         next_state = STOP;
                     end
@@ -176,7 +176,7 @@ module uart_tx (
             STOP: begin
                 if (baud_tick) begin
                     tx = 1;
-                    if (count_16 == 15) begin
+                    if (count_16 == 16) begin
                         count_16 = 0;
                         next_state = IDLE;
                     end
