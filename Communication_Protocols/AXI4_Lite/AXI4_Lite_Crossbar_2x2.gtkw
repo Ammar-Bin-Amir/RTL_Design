@@ -1,0 +1,136 @@
+[*]
+[*] GTKWave Analyzer v3.3.114 (w)1999-2023 BSI
+[*] Wed Oct 25 12:11:58 2023
+[*]
+[dumpfile] "/home/ammar-bin-amir/Desktop/RTL_Design/Communication_Protocols/AXI4_Lite/AXI4_Lite_Crossbar_2x2_tb.vcd"
+[dumpfile_mtime] "Wed Oct 25 12:04:36 2023"
+[dumpfile_size] 29925
+[savefile] "/home/ammar-bin-amir/Desktop/RTL_Design/Communication_Protocols/AXI4_Lite/AXI4_Lite_Crossbar_2x2.gtkw"
+[timestart] 0
+[size] 1850 1006
+[pos] -1 -1
+*-8.238464 1000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 278
+[signals_width] 252
+[sst_expanded] 1
+[sst_vpaned_height] 299
+@29
+axi4_lite_crossbar_2x2_tb.aclk
+@28
+axi4_lite_crossbar_2x2_tb.aresetn
+@22
+axi4_lite_crossbar_2x2_tb.awaddr_out_m1[31:0]
+@28
+axi4_lite_crossbar_2x2_tb.awprot_out_m1[2:0]
+axi4_lite_crossbar_2x2_tb.awvalid_out_m1
+axi4_lite_crossbar_2x2_tb.awready_in_m1
+@22
+axi4_lite_crossbar_2x2_tb.wdata_out_m1[31:0]
+axi4_lite_crossbar_2x2_tb.wstrb_out_m1[3:0]
+@28
+axi4_lite_crossbar_2x2_tb.wvalid_out_m1
+axi4_lite_crossbar_2x2_tb.wready_in_m1
+axi4_lite_crossbar_2x2_tb.bresp_in_m1[1:0]
+[color] 7
+axi4_lite_crossbar_2x2_tb.bvalid_in_m1
+axi4_lite_crossbar_2x2_tb.bready_out_m1
+@22
+axi4_lite_crossbar_2x2_tb.araddr_out_m1[31:0]
+@28
+axi4_lite_crossbar_2x2_tb.arprot_out_m1[2:0]
+axi4_lite_crossbar_2x2_tb.arvalid_out_m1
+axi4_lite_crossbar_2x2_tb.arready_in_m1
+@22
+axi4_lite_crossbar_2x2_tb.rdata_in_m1[31:0]
+@28
+[color] 7
+axi4_lite_crossbar_2x2_tb.rvalid_in_m1
+axi4_lite_crossbar_2x2_tb.rready_out_m1
+axi4_lite_crossbar_2x2_tb.rresp_in_m1[1:0]
+@22
+axi4_lite_crossbar_2x2_tb.awaddr_out_m2[31:0]
+@28
+axi4_lite_crossbar_2x2_tb.awprot_out_m2[2:0]
+axi4_lite_crossbar_2x2_tb.awvalid_out_m2
+axi4_lite_crossbar_2x2_tb.awready_in_m2
+@22
+axi4_lite_crossbar_2x2_tb.wdata_out_m2[31:0]
+axi4_lite_crossbar_2x2_tb.wstrb_out_m2[3:0]
+@28
+axi4_lite_crossbar_2x2_tb.wvalid_out_m2
+axi4_lite_crossbar_2x2_tb.wready_in_m2
+axi4_lite_crossbar_2x2_tb.bresp_in_m2[1:0]
+axi4_lite_crossbar_2x2_tb.bvalid_in_m2
+axi4_lite_crossbar_2x2_tb.bready_out_m2
+@22
+axi4_lite_crossbar_2x2_tb.araddr_out_m2[31:0]
+@28
+axi4_lite_crossbar_2x2_tb.arprot_out_m2[2:0]
+axi4_lite_crossbar_2x2_tb.arvalid_out_m2
+axi4_lite_crossbar_2x2_tb.arready_in_m2
+@22
+axi4_lite_crossbar_2x2_tb.rdata_in_m2[31:0]
+@28
+axi4_lite_crossbar_2x2_tb.rvalid_in_m2
+axi4_lite_crossbar_2x2_tb.rready_out_m2
+axi4_lite_crossbar_2x2_tb.rresp_in_m2[1:0]
+@22
+axi4_lite_crossbar_2x2_tb.awaddr_in_s1[31:0]
+@28
+axi4_lite_crossbar_2x2_tb.awprot_in_s1[2:0]
+axi4_lite_crossbar_2x2_tb.awvalid_in_s1
+axi4_lite_crossbar_2x2_tb.awready_out_s1
+@22
+axi4_lite_crossbar_2x2_tb.wdata_in_s1[31:0]
+axi4_lite_crossbar_2x2_tb.wstrb_in_s1[3:0]
+@28
+axi4_lite_crossbar_2x2_tb.wvalid_in_s1
+axi4_lite_crossbar_2x2_tb.wready_out_s1
+axi4_lite_crossbar_2x2_tb.bresp_out_s1[1:0]
+axi4_lite_crossbar_2x2_tb.bvalid_out_s1
+[color] 2
+axi4_lite_crossbar_2x2_tb.bready_in_s1
+@22
+axi4_lite_crossbar_2x2_tb.araddr_in_s1[31:0]
+@28
+axi4_lite_crossbar_2x2_tb.arprot_in_s1[2:0]
+axi4_lite_crossbar_2x2_tb.arvalid_in_s1
+axi4_lite_crossbar_2x2_tb.arready_out_s1
+@22
+axi4_lite_crossbar_2x2_tb.rdata_out_s1[31:0]
+@28
+axi4_lite_crossbar_2x2_tb.rvalid_out_s1
+[color] 5
+axi4_lite_crossbar_2x2_tb.rready_in_s1
+axi4_lite_crossbar_2x2_tb.rresp_out_s1[1:0]
+@22
+axi4_lite_crossbar_2x2_tb.awaddr_in_s2[31:0]
+@28
+axi4_lite_crossbar_2x2_tb.awprot_in_s2[2:0]
+axi4_lite_crossbar_2x2_tb.awvalid_in_s2
+axi4_lite_crossbar_2x2_tb.awready_out_s2
+@22
+axi4_lite_crossbar_2x2_tb.wdata_in_s2[31:0]
+axi4_lite_crossbar_2x2_tb.wstrb_in_s2[3:0]
+@28
+axi4_lite_crossbar_2x2_tb.wvalid_in_s2
+axi4_lite_crossbar_2x2_tb.wready_out_s2
+axi4_lite_crossbar_2x2_tb.bresp_out_s2[1:0]
+axi4_lite_crossbar_2x2_tb.bvalid_out_s2
+[color] 3
+axi4_lite_crossbar_2x2_tb.bready_in_s2
+@22
+axi4_lite_crossbar_2x2_tb.araddr_in_s2[31:0]
+@28
+axi4_lite_crossbar_2x2_tb.arprot_in_s2[2:0]
+axi4_lite_crossbar_2x2_tb.arvalid_in_s2
+axi4_lite_crossbar_2x2_tb.arready_out_s2
+@22
+axi4_lite_crossbar_2x2_tb.rdata_out_s2[31:0]
+@28
+axi4_lite_crossbar_2x2_tb.rvalid_out_s2
+[color] 6
+axi4_lite_crossbar_2x2_tb.rready_in_s2
+axi4_lite_crossbar_2x2_tb.rresp_out_s2[1:0]
+[pattern_trace] 1
+[pattern_trace] 0

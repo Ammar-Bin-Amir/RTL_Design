@@ -1,0 +1,52 @@
+[*]
+[*] GTKWave Analyzer v3.3.114 (w)1999-2023 BSI
+[*] Wed Oct 25 12:08:59 2023
+[*]
+[dumpfile] "/home/ammar-bin-amir/Desktop/RTL_Design/Communication_Protocols/AXI4_Lite/AXI4_Lite_Crossbar_2x2_tb.vcd"
+[dumpfile_mtime] "Wed Oct 25 12:04:36 2023"
+[dumpfile_size] 29925
+[savefile] "/home/ammar-bin-amir/Desktop/RTL_Design/Communication_Protocols/AXI4_Lite/AXI4_Lite_Crossbar_2x2_Write_Data_Channel.gtkw"
+[timestart] 0
+[size] 1850 1006
+[pos] -1 -1
+*-8.178320 1000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] axi4_lite_crossbar_2x2_tb.
+[sst_width] 278
+[signals_width] 197
+[sst_expanded] 1
+[sst_vpaned_height] 564
+@28
+axi4_lite_crossbar_2x2_tb.aclk
+axi4_lite_crossbar_2x2_tb.aresetn
+axi4_lite_crossbar_2x2_tb.uut.current_state
+@24
+axi4_lite_crossbar_2x2_tb.wdata_out_m1[31:0]
+@22
+axi4_lite_crossbar_2x2_tb.wstrb_out_m1[3:0]
+@28
+axi4_lite_crossbar_2x2_tb.wvalid_out_m1
+axi4_lite_crossbar_2x2_tb.wready_in_m1
+@24
+axi4_lite_crossbar_2x2_tb.wdata_out_m2[31:0]
+@22
+axi4_lite_crossbar_2x2_tb.wstrb_out_m2[3:0]
+@28
+axi4_lite_crossbar_2x2_tb.wvalid_out_m2
+axi4_lite_crossbar_2x2_tb.wready_in_m2
+@24
+axi4_lite_crossbar_2x2_tb.wdata_in_s1[31:0]
+@22
+axi4_lite_crossbar_2x2_tb.wstrb_in_s1[3:0]
+@28
+axi4_lite_crossbar_2x2_tb.wvalid_in_s1
+axi4_lite_crossbar_2x2_tb.wready_out_s1
+@24
+axi4_lite_crossbar_2x2_tb.wdata_in_s2[31:0]
+@22
+axi4_lite_crossbar_2x2_tb.wstrb_in_s2[3:0]
+@28
+axi4_lite_crossbar_2x2_tb.wvalid_in_s2
+axi4_lite_crossbar_2x2_tb.wready_out_s2
+axi4_lite_crossbar_2x2_tb.uut.next_state
+[pattern_trace] 1
+[pattern_trace] 0
