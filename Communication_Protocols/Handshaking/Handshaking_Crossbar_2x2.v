@@ -78,56 +78,5 @@ module handshaking_xbar_2x2 (
             // default: 
         endcase
     end
-
-    // always @(*) begin
-    //     if (data_out_m1 >= 8'h20 && data_out_m1 <= 8'h2f) begin
-    //         data_in_s1 <= data_out_m1;
-    //         valid_in_s1 <= valid_out_m1;
-    //         ready_in_m1 <= ready_out_s1;
-    //     end
-    //     if (data_out_m1 >= 8'h30 && data_out_m1 <= 8'h3f) begin
-    //         data_in_s2 <= data_out_m1;
-    //         valid_in_s2 <= valid_out_m1;
-    //         ready_in_m1 <= ready_out_s2;
-    //     end
-    //     if (data_out_m2 >= 8'h20 && data_out_m2 <= 8'h2f) begin
-    //         data_in_s1 <= data_out_m2;
-    //         valid_in_s1 <= valid_out_m2;
-    //         ready_in_m2 <= ready_out_s1;
-    //     end
-    //     if (data_out_m2 >= 8'h30 && data_out_m2 <= 8'h3f) begin
-    //         data_in_s2 <= data_out_m2;
-    //         valid_in_s2 <= valid_out_m2;
-    //         ready_in_m2 <= ready_out_s2;
-    //     end
-    //     if (data_out_m1 >= 8'h20 && data_out_m1 <= 8'h2f) begin
-    //         if (data_out_m2 >= 8'h20 && data_out_m2 <= 8'h2f) begin
-    //             data_in_s1 <= data_out_m2;
-    //             valid_in_s1 <= valid_out_m2;
-    //             ready_in_m2 <= ready_out_s1;
-    //         end 
-    //     end
-    //     if (data_out_m2 >= 8'h20 && data_out_m2 <= 8'h2f) begin
-    //         if (data_out_m1 >= 8'h20 && data_out_m1 <= 8'h2f) begin
-    //             data_in_s1 <= data_out_m1;
-    //             valid_in_s1 <= valid_out_m1;
-    //             ready_in_m1 <= ready_out_s1;
-    //         end
-    //     end
-    //     if (data_out_m1 >= 8'h30 && data_out_m1 <= 8'h3f) begin
-    //         if (data_out_m2 >= 8'h30 && data_out_m2 <= 8'h3f) begin
-    //             data_in_s2 <= data_out_m2;
-    //             valid_in_s2 <= valid_out_m2;
-    //             ready_in_m2 <= ready_out_s2;
-    //         end
-    //     end
-    //     if (data_out_m2 >= 8'h30 && data_out_m2 <= 8'h3f) begin
-    //         if (data_out_m1 >= 8'h30 && data_out_m1 <= 8'h3f) begin
-    //             data_in_s2 <= data_out_m1;
-    //             valid_in_s2 <= valid_out_m1;
-    //             ready_in_m1 <= ready_out_s2;
-    //         end
-    //     end
-    // end
     
 endmodule
