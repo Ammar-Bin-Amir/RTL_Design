@@ -1,49 +1,53 @@
 [*]
 [*] GTKWave Analyzer v3.3.114 (w)1999-2023 BSI
-[*] Wed Oct 25 16:13:08 2023
+[*] Sun Oct 29 08:21:46 2023
 [*]
 [dumpfile] "/home/ammar-bin-amir/Desktop/RTL_Design/Communication_Protocols/UART/UART_Test_tb.vcd"
-[dumpfile_mtime] "Wed Oct 25 16:09:10 2023"
-[dumpfile_size] 73176291
+[dumpfile_mtime] "Sun Oct 29 08:20:49 2023"
+[dumpfile_size] 1955045
 [savefile] "/home/ammar-bin-amir/Desktop/RTL_Design/Communication_Protocols/UART/UART.gtkw"
-[timestart] 135000
+[timestart] 0
 [size] 1850 1006
 [pos] -1 -1
-*-18.000000 1006000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-18.790411 75 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] uart_test_tb.
 [treeopen] uart_test_tb.uut.
 [sst_width] 278
-[signals_width] 219
+[signals_width] 256
 [sst_expanded] 1
-[sst_vpaned_height] 285
+[sst_vpaned_height] 299
 @28
 uart_test_tb.clk
 uart_test_tb.rst
+@c00028
 uart_test_tb.address[1:0]
+@28
+(0)uart_test_tb.address[1:0]
+(1)uart_test_tb.address[1:0]
+@1401200
+-group_end
 @22
-uart_test_tb.uut.uut_uart_baud_rate.baud_division[31:0]
+uart_test_tb.uut.baud_division[31:0]
 uart_test_tb.uut.uut_uart_baud_rate.baud_count[31:0]
 @28
-uart_test_tb.uut.uut_uart_baud_rate.baud_tick
+uart_test_tb.uut.baud_tick
+uart_test_tb.write_enable
 @22
 uart_test_tb.write_data[31:0]
 @28
-uart_test_tb.write_enable
+uart_test_tb.uut.enable
 @22
-uart_test_tb.uut.uut_uart_tx.data[7:0]
-@28
-uart_test_tb.tx
-@22
+uart_test_tb.uut.data_out[7:0]
 uart_test_tb.uut.uut_uart_tx.count_16[5:0]
 @28
-uart_test_tb.rx
+uart_test_tb.uut.tx
+uart_test_tb.uut.rx
 @22
 uart_test_tb.uut.uut_uart_rx.count_16[4:0]
-@23
-uart_test_tb.uut.uut_uart_rx.data[7:0]
+uart_test_tb.uut.data_in[7:0]
 @28
-uart_test_tb.read_enable
+uart_test_tb.uut.read_enable
 @22
-uart_test_tb.read_data[7:0]
+uart_test_tb.uut.read_data[7:0]
 [pattern_trace] 1
 [pattern_trace] 0
