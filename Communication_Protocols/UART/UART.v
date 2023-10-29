@@ -26,6 +26,15 @@ module uart_top_design (
     reg [7:0] data_out;
     wire [7:0] data_in;
 
+    always @(posedge clk) begin
+        if (rst) begin
+            baud_division <= 0;
+            enable <= 0;
+            data_out <= 0;
+            read_data <= 0;
+        end
+    end
+
     always @(*) begin
         case (address)
             BAUD_RATE: begin
