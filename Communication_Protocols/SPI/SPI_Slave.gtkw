@@ -1,0 +1,54 @@
+[*]
+[*] GTKWave Analyzer v3.3.114 (w)1999-2023 BSI
+[*] Wed Nov 15 20:13:05 2023
+[*]
+[dumpfile] "/home/ammar-bin-amir/Desktop/RTL_Design/Communication_Protocols/SPI/SPI_tb.vcd"
+[dumpfile_mtime] "Wed Nov 15 19:52:08 2023"
+[dumpfile_size] 21856
+[savefile] "/home/ammar-bin-amir/Desktop/RTL_Design/Communication_Protocols/SPI/SPI_Slave.gtkw"
+[timestart] 3038
+[size] 1850 1006
+[pos] -1 -1
+*-7.668671 3221 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] spi_tb.
+[treeopen] spi_tb.uut.
+[sst_width] 278
+[signals_width] 256
+[sst_expanded] 1
+[sst_vpaned_height] 285
+@28
+spi_tb.clk
+spi_tb.rst
+spi_tb.uut.uut_slave.next_state[1:0]
+spi_tb.uut.uut_slave.current_state[1:0]
+spi_tb.en
+spi_tb.uut.uut_slave.cs
+spi_tb.uut.uut_slave.sck
+spi_tb.ext_command_in[7:0]
+spi_tb.ext_address_in[7:0]
+spi_tb.ext_data_in[7:0]
+spi_tb.uut.uut_slave.mosi
+@24
+spi_tb.uut.uut_slave.data_count[23:0]
+@28
+spi_tb.uut.uut_slave.data_end
+spi_tb.uut.uut_slave.command_save[7:0]
+spi_tb.uut.uut_slave.address_save[7:0]
+spi_tb.uut.uut_slave.data_save[7:0]
+spi_tb.uut.uut_slave.data_out[7:0]
+spi_tb.uut.uut_slave.miso
+spi_tb.ext_data_out[7:0]
+[color] 2
+spi_tb.uut.uut_slave.clk
+[color] 2
+spi_tb.uut.uut_slave.rst
+[color] 2
+spi_tb.uut.uut_slave.cs
+[color] 2
+spi_tb.uut.uut_slave.sck
+[color] 2
+spi_tb.uut.uut_slave.mosi
+[color] 2
+spi_tb.uut.uut_slave.miso
+[pattern_trace] 1
+[pattern_trace] 0
