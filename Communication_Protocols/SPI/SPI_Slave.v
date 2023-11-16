@@ -11,7 +11,7 @@ module spi_slave (
     output reg miso
 );
 
-    reg [23:0] data_count;
+    reg [5:0] data_count;
     reg data_end;
 
     always @(posedge clk) begin
@@ -22,7 +22,7 @@ module spi_slave (
         else begin
             if (current_state == DATA) begin
                 if (sck == 1) begin
-                    if (data_count == 23) begin
+                    if (data_count == 63) begin
                         data_count <= 0;
                         data_end <= 1;
                     end
@@ -46,8 +46,8 @@ module spi_slave (
     // Master Out Slave In
 
     reg [7:0] command_save;
-    reg [7:0] address_save;
-    reg [7:0] data_save;
+    reg [23:0] address_save;
+    reg [31:0] data_save;
 
     always @(posedge sck) begin
         if (rst) begin
@@ -57,14 +57,15 @@ module spi_slave (
         end
         else begin
             if (current_state == DATA) begin
+                // Command, address and data saved from MOSI line from MSB respectively
                 if ((data_count >= 0) && (data_count < 8)) begin
                     command_save <= {command_save[6:0],mosi};
                 end
-                else if ((data_count >= 8) && (data_count < 16)) begin
-                    address_save <= {address_save[6:0],mosi};
+                else if ((data_count >= 8) && (data_count < 32)) begin
+                    address_save <= {address_save[22:0],mosi};
                 end
-                else if ((data_count >= 16) && (data_count <= 23)) begin
-                    data_save <= {data_save[6:0],mosi};
+                else if ((data_count >= 32) && (data_count <= 63)) begin
+                    data_save <= {data_save[30:0],mosi};
                 end
                 else begin
                     command_save <= command_save;
@@ -82,7 +83,7 @@ module spi_slave (
 
     // Master In Slave Out
 
-    reg [7:0] data_out;
+    reg [31:0] data_out;
 
     always @(negedge sck) begin
         if (rst) begin
@@ -93,9 +94,10 @@ module spi_slave (
                 if ((data_count > 1) && (data_count < 8)) begin
                     data_out <= data_save;
                 end
-                else if ((data_count >= 8) && (data_count <= 23)) begin
-                    if ((data_count > 16) && (data_count <= 23)) begin
-                        data_out <= {data_out[6:0],1'b0};
+                else if ((data_count >= 8) && (data_count <= 63)) begin
+                    // Data shifted serially on MISO line from MSB respectively
+                    if ((data_count > 32) && (data_count <= 63)) begin
+                        data_out <= {data_out[30:0],1'b0};
                     end
                     else begin
                         data_out <= data_out;
@@ -141,9 +143,10 @@ module spi_slave (
                     end
                 end
                 DATA: begin
-                    if ((data_count >= 16) && (data_count <= 23)) begin
+                    if ((data_count >= 32) && (data_count <= 63)) begin
+                        // Data shifted serially on MOSI line from MSB respectively on command ALL ONES
                         if (command_save == 8'hff) begin
-                            miso = data_out[7];
+                            miso = data_out[31];
                         end
                         else begin
                             miso = 0;

@@ -8,12 +8,12 @@ module spi_master (
     output reg sck,
     // Master Out Slave In
     input wire [7:0] ext_command_in,
-    input wire [7:0] ext_address_in,
-    input wire [7:0] ext_data_in,
+    input wire [23:0] ext_address_in,
+    input wire [31:0] ext_data_in,
     output reg mosi,
     // Master In Slave Out
     input wire miso,
-    output wire [7:0] ext_data_out
+    output wire [31:0] ext_data_out
 );
     
     // Serial Clock
@@ -36,8 +36,8 @@ module spi_master (
 
     // Master Out Slave In
 
-    reg [23:0] data_save;
-    reg [23:0] data_count;
+    reg [63:0] data_save;
+    reg [5:0] data_count;
     reg data_end;
 
     always @(posedge clk) begin
@@ -49,8 +49,9 @@ module spi_master (
         else begin
             if (current_state == DATA) begin
                 if (sck == 1) begin
-                    data_save <= {data_save[22:0],1'b0};
-                    if (data_count == 23) begin
+                    // Command, address and data shifted serially on MOSI line from MSB respectively
+                    data_save <= {data_save[62:0],1'b0};
+                    if (data_count == 63) begin
                         data_count <= 0;
                         data_end <= 1;
                     end
@@ -66,13 +67,14 @@ module spi_master (
                 end
             end
             else begin
+                // Data being written on command ALL ZEROS
                 if (ext_command_in == 8'h00) begin
                     data_save <= {ext_command_in,ext_address_in,ext_data_in};
                     data_count <= 0;
                     data_end <= 0;
                 end
                 else begin
-                    data_save <= {ext_command_in,ext_address_in,8'h00};
+                    data_save <= {ext_command_in,ext_address_in,32'h0000_0000};
                     data_count <= 0;
                     data_end <= 0;
                 end
@@ -82,7 +84,7 @@ module spi_master (
 
     // Master In Slave Out
 
-    reg [7:0] data_in;
+    reg [31:0] data_in;
 
     always @(posedge clk) begin
         if (rst) begin
@@ -91,8 +93,9 @@ module spi_master (
         else begin
             if (current_state == DATA) begin
                 if (sck == 0) begin
-                    if ((data_count >= 16) && (data_count <= 23)) begin
-                        data_in <= {data_in[6:0],miso};
+                    // Data being saved from MISO line from LSB
+                    if ((data_count >= 32) && (data_count <= 63)) begin
+                        data_in <= {data_in[30:0],miso};
                     end
                     else begin
                         data_in <= data_in;
@@ -150,7 +153,8 @@ module spi_master (
                 DATA: begin
                     cs = 0;
                     sck = ~clock_count;
-                    mosi = data_save[23];
+                    // Command, address and data shifted serially on MOSI line from MSB respectively
+                    mosi = data_save[63];
                     if (data_end == 1'b1) begin
                         sck = 1;
                         next_state = IDLE;
