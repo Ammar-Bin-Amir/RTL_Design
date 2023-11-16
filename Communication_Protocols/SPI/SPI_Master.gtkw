@@ -1,19 +1,19 @@
 [*]
 [*] GTKWave Analyzer v3.3.114 (w)1999-2023 BSI
-[*] Wed Nov 15 20:12:57 2023
+[*] Thu Nov 16 00:40:26 2023
 [*]
 [dumpfile] "/home/ammar-bin-amir/Desktop/RTL_Design/Communication_Protocols/SPI/SPI_tb.vcd"
-[dumpfile_mtime] "Wed Nov 15 19:52:08 2023"
-[dumpfile_size] 21856
+[dumpfile_mtime] "Thu Nov 16 00:37:41 2023"
+[dumpfile_size] 82218
 [savefile] "/home/ammar-bin-amir/Desktop/RTL_Design/Communication_Protocols/SPI/SPI_Master.gtkw"
-[timestart] 1674
+[timestart] 2883
 [size] 1850 1006
-[pos] -27 -24
-*-7.437069 1681 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[pos] -1 -1
+*-9.603299 3000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] spi_tb.
 [treeopen] spi_tb.uut.
 [sst_width] 278
-[signals_width] 368
+[signals_width] 702
 [sst_expanded] 1
 [sst_vpaned_height] 285
 @28
@@ -21,22 +21,21 @@ spi_tb.clk
 spi_tb.rst
 spi_tb.uut.uut_master.next_state[1:0]
 spi_tb.uut.uut_master.current_state[1:0]
-spi_tb.en
 spi_tb.uut.uut_master.cs
 spi_tb.uut.uut_master.clock_count
 spi_tb.uut.uut_master.sck
-spi_tb.ext_command_in[7:0]
-spi_tb.ext_address_in[7:0]
-spi_tb.ext_data_in[7:0]
-spi_tb.uut.uut_master.data_save[23:0]
+spi_tb.uut.uut_master.ext_command_in[7:0]
+spi_tb.uut.uut_master.ext_address_in[23:0]
+spi_tb.uut.uut_master.ext_data_in[31:0]
+spi_tb.uut.uut_master.data_save[63:0]
 @24
-spi_tb.uut.uut_master.data_count[23:0]
+spi_tb.uut.uut_master.data_count[5:0]
 @28
 spi_tb.uut.uut_master.data_end
 spi_tb.uut.uut_master.mosi
 spi_tb.uut.uut_master.miso
-spi_tb.uut.uut_master.data_in[7:0]
-spi_tb.ext_data_out[7:0]
+spi_tb.uut.uut_master.data_in[31:0]
+spi_tb.uut.uut_master.ext_data_out[31:0]
 [color] 3
 spi_tb.uut.uut_master.clk
 [color] 3
