@@ -1,0 +1,46 @@
+[*]
+[*] GTKWave Analyzer v3.3.114 (w)1999-2023 BSI
+[*] Fri Nov 24 18:15:29 2023
+[*]
+[dumpfile] "/home/ammar-bin-amir/Desktop/RTL_Design/Communication_Protocols/I2C/I2C_tb.vcd"
+[dumpfile_mtime] "Fri Nov 24 00:16:02 2023"
+[dumpfile_size] 31344
+[savefile] "/home/ammar-bin-amir/Desktop/RTL_Design/Communication_Protocols/I2C/I2C_Slave.gtkw"
+[timestart] 0
+[size] 1850 1006
+[pos] -1 -1
+*-11.286086 5480 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] i2c_tb.
+[treeopen] i2c_tb.uut.
+[sst_width] 278
+[signals_width] 550
+[sst_expanded] 1
+[sst_vpaned_height] 285
+@28
+i2c_tb.uut.uut_slave.clk
+i2c_tb.uut.uut_slave.rst
+@22
+i2c_tb.uut.uut_slave.next_state[3:0]
+i2c_tb.uut.uut_slave.current_state[3:0]
+@28
+i2c_tb.uut.uut_slave.slave_address_save[7:0]
+i2c_tb.uut.uut_slave.read_write_save
+i2c_tb.uut.uut_slave.slave_address_check
+i2c_tb.uut.uut_slave.register_address_save[7:0]
+i2c_tb.uut.uut_slave.register_address_check
+i2c_tb.uut.uut_slave.data_write[31:0]
+i2c_tb.uut.uut_slave.data_check
+i2c_tb.uut.uut_slave.ack
+@24
+i2c_tb.uut.uut_slave.bit_count[5:0]
+i2c_tb.uut.uut_slave.accelerated_bit_count[5:0]
+@28
+i2c_tb.uut.uut_slave.sda_out
+i2c_tb.uut.uut_slave.scl
+i2c_tb.uut.uut_slave.sda_in
+i2c_tb.uut.uut_slave.repeated_start_indication
+i2c_tb.uut.uut_slave.delayed_repeated_start_indication
+i2c_tb.uut.uut_slave.repeated_start_signal
+i2c_tb.uut.uut_slave.data_read[31:0]
+[pattern_trace] 1
+[pattern_trace] 0

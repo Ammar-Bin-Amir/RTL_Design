@@ -1,0 +1,31 @@
+[*]
+[*] GTKWave Analyzer v3.3.114 (w)1999-2023 BSI
+[*] Fri Nov 24 18:18:35 2023
+[*]
+[dumpfile] "/home/ammar-bin-amir/Desktop/RTL_Design/Communication_Protocols/I2C/I2C_tb.vcd"
+[dumpfile_mtime] "Fri Nov 24 18:18:14 2023"
+[dumpfile_size] 31344
+[savefile] "/home/ammar-bin-amir/Desktop/RTL_Design/Communication_Protocols/I2C/I2C.gtkw"
+[timestart] 0
+[size] 1850 1006
+[pos] -1 -1
+*-11.238968 12020 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] i2c_tb.
+[sst_width] 278
+[signals_width] 517
+[sst_expanded] 1
+[sst_vpaned_height] 285
+@28
+i2c_tb.uut.clk
+i2c_tb.uut.rst
+i2c_tb.uut.ext_slave_address_in[6:0]
+i2c_tb.uut.ext_read_write_in
+i2c_tb.uut.ext_register_address_in[7:0]
+i2c_tb.uut.ext_data_in[31:0]
+i2c_tb.uut.en
+i2c_tb.uut.sda_out
+i2c_tb.uut.scl
+i2c_tb.uut.sda_in
+i2c_tb.uut.ext_data_out[31:0]
+[pattern_trace] 1
+[pattern_trace] 0
